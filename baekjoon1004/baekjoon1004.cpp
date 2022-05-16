@@ -11,12 +11,12 @@ int main()
 	{
 		int cnt = 0;
 		cin >> x1 >> y1 >> x2 >> y2 >> n;
-		/*int* px = new int[n];
+		int* px = new int[n];
 		int* py = new int[n];
-		int* r = new int[n];*/
-		int px[50] = { 9999 };
+		int* r = new int[n];
+		/*int px[50] = { 9999 };
 		int py[50] = { 9999 };
-		int r[50] = { 9999 };
+		int r[50] = { 9999 };*/
 
 		for (int i = 0; i < n; i++)
 			cin >> px[i] >> py[i] >> r[i];
@@ -31,9 +31,9 @@ int main()
 					cnt++; // 출발/도착점이 행성 내부에 있으면 (행성원점까지 거리가 r보다 작으면) ++
 		}
 
-		/*delete[] r;
+		delete[] r;
 		delete[] py;
-		delete[] px;*/
+		delete[] px;
 		cout << "\t\t\t" << cnt << "\n";
 	}
 
