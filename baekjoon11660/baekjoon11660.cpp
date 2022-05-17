@@ -1,10 +1,14 @@
 #include <iostream>
+#include <time.h>
 using namespace std;
 //int arr[1024][1024];
 int main()
 {
-	/*cin.tie(NULL);
-	ios::sync_with_stdio(false);*/
+	clock_t start, end;
+	double result;
+	start = clock(); // 시간 측정 시작
+	cin.tie(NULL);
+	ios::sync_with_stdio(false);
 	int n, m, i, j;
 	cin >> n >> m;
 	int** arr = NULL;
@@ -34,6 +38,10 @@ int main()
 		delete[] arr[i];
 
 	delete[] arr; // 행 메모리해제
+
+	end = clock(); // 시간 측정 끝
+	result = (double)(end - start);
+	cout << result/1000 << "초\n";
 
 	return 0;
 }
