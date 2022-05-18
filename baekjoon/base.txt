@@ -17,7 +17,7 @@ int main()
 #ifdef LOCAL
 	end = clock();
 	result = (double)(end - start);
-	cout << "\n" << result / 1000 << "초\n";
+	cout << "\n\n" << result / 1000 << "초\n";
 #endif // LOCAL
 
 	return 0;
