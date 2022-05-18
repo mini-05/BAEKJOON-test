@@ -92,6 +92,8 @@ int main()
 	end = clock(); // 시간 측정 끝
 	result = (double)(end - start);
 	cout << result / 1000 << "초\n";
+	/*cout << __TIME__ << "\n";
+	cout << __TIMESTAMP__ << "\n";*/
 #endif
 	return 0;
 }
