@@ -58,35 +58,35 @@ int main()
 #endif
 	cin.tie(NULL); cout.tie(NULL);
 	ios_base::sync_with_stdio(false);
-	int n, m, k, l = 0;
+	int n, m, k, sumx = 0;
 	int x1, x2, y1, y2;
 	int** arr;
 
 	cin >> n >> m;
 
-	arr = new int* [n + 1];
-	arr[0] = new int[n + 1];
+	arr = new int* [n + 1]; // 0 ~ n+1 행 동적할당
+	arr[0] = new int[n + 1]; // [0][i] 열 동적할당
 	for (int i = 0; i <= n; i++)
 	{
-		arr[0][i] = 0;
+		arr[0][i] = 0; // [0][i]을 0으로 초기화
 	}
 	for (int i = 1; i <= n; i++)
 	{
-		arr[i] = new int[n + 1];
-		arr[i][0] = 0;
-		l = 0;
+		arr[i] = new int[n + 1]; // [1][n+1] ~ [n+1][n+1] 열 동적할당
+		arr[i][0] = 0; // [1][0] ~ [1][n+1] 0으로 초기화
+		sumx = 0; // 행 누적 값 0으로 초기화
 		for (int j = 1; j <= n; j++)
 		{
-			cin >> k;
-			l += k;
-			arr[i][j] = arr[i - 1][j] + l;
+			cin >> k; // // [1][n+1] ~ [n+1][n+1] 값 입력
+			sumx += k; // 행 누적 값
+			arr[i][j] = arr[i - 1][j] + sumx; // [i][j]의 열 누적 값 + 행 누적 값 = [0][0] ~ [i][j] 모든 값의 합 = 사각형 값의 합
 		}
 	}
 
 	for (int z = 0; z < m; z++)
 	{
 		cin >> x1 >> y1 >> x2 >> y2;
-		cout << arr[x2][y2] + arr[x1 - 1][y1 - 1] - arr[x1 - 1][y2] - arr[x2][y1 - 1] << "\n";
+		cout << arr[x2][y2] + arr[x1 - 1][y1 - 1] - arr[x1 - 1][y2] - arr[x2][y1 - 1] << "\n"; // (x2,y2)사각형 -(x1-1,y2)사각형 - (x2,y1-1)사각형 + (x1-1,y1-1)사각형
 	}
 #ifdef LOCAL
 	end = clock(); // 시간 측정 끝
