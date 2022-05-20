@@ -10,7 +10,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루션 항목", "{1A5F1F10-74FB-465D-8491-15E9D2234BF8}"
 	ProjectSection(SolutionItems) = preProject
 		base.txt = base.txt
-		input.txt = input.txt
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2164", "2164\2164.vcxproj", "{BF6EA7A7-1D93-4FD8-81A0-9EBA0761B1FF}"
@@ -26,6 +25,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1026", "1026\1026.vcxproj", "{648119C5-8896-418C-B0F7-F06CE29A5965}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4344", "4344\4344.vcxproj", "{F946A3FC-CC4E-4FB7-BF48-2A6D639D41F6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10828", "10828\10828.vcxproj", "{6649A9BE-E274-4E25-BD4D-50742799CB61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -107,6 +108,14 @@ Global
 		{F946A3FC-CC4E-4FB7-BF48-2A6D639D41F6}.Release|x64.Build.0 = Release|x64
 		{F946A3FC-CC4E-4FB7-BF48-2A6D639D41F6}.Release|x86.ActiveCfg = Release|Win32
 		{F946A3FC-CC4E-4FB7-BF48-2A6D639D41F6}.Release|x86.Build.0 = Release|Win32
+		{6649A9BE-E274-4E25-BD4D-50742799CB61}.Debug|x64.ActiveCfg = Debug|x64
+		{6649A9BE-E274-4E25-BD4D-50742799CB61}.Debug|x64.Build.0 = Debug|x64
+		{6649A9BE-E274-4E25-BD4D-50742799CB61}.Debug|x86.ActiveCfg = Debug|Win32
+		{6649A9BE-E274-4E25-BD4D-50742799CB61}.Debug|x86.Build.0 = Debug|Win32
+		{6649A9BE-E274-4E25-BD4D-50742799CB61}.Release|x64.ActiveCfg = Release|x64
+		{6649A9BE-E274-4E25-BD4D-50742799CB61}.Release|x64.Build.0 = Release|x64
+		{6649A9BE-E274-4E25-BD4D-50742799CB61}.Release|x86.ActiveCfg = Release|Win32
+		{6649A9BE-E274-4E25-BD4D-50742799CB61}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

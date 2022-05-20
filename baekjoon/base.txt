@@ -1,5 +1,5 @@
 #pragma warning(disable:4996)
-#define LOCAL
+#define LOCAL_TEST
 
 #include <iostream>
 using namespace std;
@@ -7,9 +7,9 @@ int main()
 {
 	cin.tie(NULL);	cout.tie(NULL);
 	ios::sync_with_stdio(false);
-#ifdef LOCAL
-	freopen("input.txt", "r", stdin);
-#endif // LOCAL
+#ifdef LOCAL_TEST
+	FILE *fp = freopen("input.txt", "r", stdin);
+#endif // LOCAL_TEST
 
 
 
