@@ -11,7 +11,16 @@ int main()
 	freopen("input.txt", "r", stdin);
 #endif // LOCAL
 
+	int n = 0;
+	int* a, * b, * ra;
+	cin >> n;
+	a = new int[n];
+	b = new int[n];
+	ra = new int[n];
 
+	delete[] ra;
+	delete[] b;
+	delete[] a;
 
 	return 0;
 }
