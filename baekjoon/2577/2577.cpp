@@ -51,7 +51,7 @@ int main()
 	int sum[10]{ 0 };
 	cin >> a >> b >> c;
 	mul = a * b * c;
-	string s = to_string(mul);
+	string s = to_string(mul); // mul을 string형식으로 바꾸어주는 to_string
 
 	for (char ch : s) // 문자열의 문자들을 하나씩 꺼내온다. (foreach문 활용)
 					  // 문자를 숫자로 변환한 값의 인덱스를 1 증가시킨다.
