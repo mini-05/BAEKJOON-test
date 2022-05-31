@@ -6,7 +6,8 @@
 using namespace std;
 int main()
 {
-	cin.tie(NULL);	cout.tie(NULL);	//cin.tie(0)->sync_with_stdio(false);
+	//cin.tie(0)->sync_with_stdio(false);
+	cin.tie(NULL);	cout.tie(NULL);
 	ios::sync_with_stdio(false);
 #ifdef LOCAL_TEST
 	FILE *fp = freopen("input.txt", "r", stdin);
