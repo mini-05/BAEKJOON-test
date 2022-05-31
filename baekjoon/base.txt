@@ -1,19 +1,25 @@
 #pragma warning(disable:4996)
 #define _CRT_SECURE_NO_WARNINGS
 #define LOCAL_TEST
+#define endl '\n'
+
+#define FAST_IO ios::sync_with_stdio(false); cin.tie(NULL);
 
 #include <iostream>
 using namespace std;
 int main()
-{
-	//cin.tie(0)->sync_with_stdio(false);
-	cin.tie(NULL);	cout.tie(NULL);
-	ios::sync_with_stdio(false);
+{	
 #ifdef LOCAL_TEST
 	FILE *fp = freopen("input.txt", "r", stdin);
 #endif // LOCAL_TEST
 
 
+
+#ifndef ONLINE_JUDGE
+#ifndef BOJ
+	// Ãâ·Â µð¹ö±ë
+#endif
+#endif
 
 	return 0;
 }
