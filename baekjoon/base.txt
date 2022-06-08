@@ -1,6 +1,6 @@
 #pragma warning(disable:4996)
 #define _CRT_SECURE_NO_WARNINGS
-#define LOCAL_TEST
+//#define LOCAL_TEST
 
 #include <iostream>
 #define endl '\n'
@@ -11,7 +11,7 @@ int main()
 #ifndef ONLINE_JUDGE
 	FILE *fp = freopen("input.txt", "r", stdin);
 #else
-	FAST_IO
+	FAST_IO;
 #endif // ONLINE_JUDGE
 
 
